@@ -1,0 +1,351 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+#eee a{
+    display: inline-flex;
+    text-decoration: none;
+    margin-left: 20vh;
+    position: relative;
+    left: 27vh;
+    top: -1.4rem;
+    color: rgb(253, 250, 250);
+    font-size: 18px;
+    font-family: sans-serif;
+    font-weight: 600;
+}
+#eee a::after{
+    content: '';
+    position: absolute;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: #fff;
+    border-radius: 5px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .2s;
+}
+#eee a:hover::after{
+    transform-origin: left;
+    transform: scaleX(1);
+}
+#eee a:hover{
+    display: inline-flex;
+    margin-left: 20vh;
+    position: relative;
+    left: 27vh;
+    top: -1.4rem;
+    color: rgb(252, 252, 252);
+    font-size: 18px;
+    font-weight: 600;
+}
+#eee h1{
+    position: relative;
+    top: 2.4vh;
+    left: 15px;
+    color: aliceblue;
+    font-size: 8vh;
+    font-family: serif
+}
+#containe{
+    position: fixed;
+    top: -0.1rem;
+    z-index: 1;
+}
+#zxz{
+    background-color: aliceblue;height: 7vh;
+}
+#zxz span{
+    position: relative;
+    top: 0.1rem;
+}
+#zxz a{
+    color: rgb(3, 46, 148);
+    text-decoration-line: none;
+    font-family: sans-serif;
+    font-size: 18px;
+    position: relative;
+    top: 0.1rem;
+}
+#selec a{
+    position: relative;
+    left: 37rem;
+    top: -1.3rem;
+    margin-left: 1.5rem;
+    color: rgb(2, 60, 185);
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration-line: none;
+}
+#selec a:hover{
+    position: relative;
+    left: 37rem;
+    top: -1.3rem;
+    margin-left: 1.5rem;
+    color: rgb(2, 60, 185);
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration-line: none;
+}
+#selec a::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: #004fce;
+    border-radius: 5px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .2s;
+}
+#selec a:hover::after{
+    transform-origin: left;
+    transform: scaleX(1);
+}
+#selec u{
+    position: relative;
+    left:38rem;
+    top: -1.3rem;
+    text-decoration-line: none;
+    color: rgb(0, 0, 0);
+}
+#header{
+    background: linear-gradient(rgb(7, 7, 253),rgba(255, 255, 255, 0.447));height: 15vh;width: 192.5vh;
+    position: relative;
+    top: -8px;
+}
+#header button{
+    width: 8rem;
+    height: 3rem;
+    position: relative;
+    top: -3.6rem;
+    left: 61em;
+    font-size: 18px;
+    font-family: sans-serif;
+    font-weight: 600;
+    background: transparent;
+    border: 2px solid #ffff;
+    border-radius: 10px;
+    color: aliceblue;
+    cursor: pointer;
+}
+#header button:hover{
+    width: 8.2rem;
+    height: 3.2rem;
+    position: relative;
+    top: -3.6rem;
+    left: 61em;
+    font-size: 18px;
+    font-family: sans-serif;
+    font-weight: 600;
+    background-color: aliceblue;
+    border: 2px solid #ffff;
+    border-radius: 10px;
+    color: rgb(2, 36, 186);
+    cursor: pointer;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.607);
+    transition: 0.2s;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    /* background: url('clothers.PNG')no-repeat;
+    background-size: cover;
+    background-position: center;  */
+
+    background-color: aliceblue;
+
+}
+.wonactive{
+    position: relative;
+    top: 1rem;
+    width: 430px;
+    height: 460px;
+    background-color: rgb(145, 197, 241);
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 14px rgb(4, 4, 4);
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    /* overflow: hidden; */
+    border-radius: 20px;
+    z-index: 1;
+    transition: height .2s ease;
+}
+.won{
+    position: relative;
+    top: 1rem;
+    width: 400px;
+    height: 500px;
+    background-color: rgb(145, 195, 236);
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 14px rgb(4, 4, 4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-bottom-left-radius: 20px;
+    z-index: 1;
+    transition: height .2s ease;
+    
+}
+.won .form-box{
+    width: 100%;
+    padding: 40px;
+}
+
+/* log in title */
+.form-box.login h2{
+    font-size: 3.6em;
+    color: #ffffff;
+    text-align: center;
+    position: relative;
+    top: -8vh;
+    font-family: "ink free";
+    text-transform: capitalize;
+}
+/* register title */
+.form-box.register h2{
+    font-size: 3em;
+    color: #ffffff;
+    text-align: center;
+    position: relative;
+    top: -7vh;
+    font-family: "ink free";
+    text-transform: capitalize;
+}
+.input-box{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    border-bottom: 2px solid #ffffff;
+}
+/* label is words you to the inputs :email password and username */
+.input-box label{
+    position: relative;
+    top: -2rem;
+    left: 5px;
+    transform: translateY(-30%);
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    pointer-events: none;
+    transition: .5s;
+    font-family: "ink free";
+}
+.input-box input:focus~label,
+.input-box input:valid~label{
+    top: -4rem;
+    font-size: 0;
+}
+/* input */
+.input-box input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    color: #ffffff;
+    font-weight: 600;
+    padding: 0 35px 0 5px;
+}
+/* icons */
+.input-box .icon{
+    position: absolute;
+    right: 8px;
+    font-size: 1.2em;
+    color: rgb(255, 255, 255);
+    line-height: 57px;
+}
+/* remember me and forgot password */
+.remember-forgot{
+    font-size: 15px;
+    color: #ffffff;
+    font-weight: 500;
+    margin: -15px 0 15px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    top: 2rem;
+    cursor: pointer;
+}
+/* remember me */
+.remember-forgot label input{
+    accent-color: #37404c;
+    margin-right: 3px;
+}
+/* forgot password */
+.remember-forgot a{
+    color: #ffffff;
+    text-decoration-line: none;
+}
+.remember-forgot a:hover{
+    text-decoration: underline;
+}
+/* the button of log in page */
+.btn{
+    width: 100%;
+    height: 45px;
+    background-color: #0346ff;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 18px;
+    color: aliceblue;
+    font-weight: 600;
+    position: relative;
+    top: 2rem;
+    font-family: "ink free";
+}
+.btn:hover{
+    width: 100%;
+    height: 45px;
+    background-color: #0127ff;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 18px;
+    color: aliceblue;
+    font-weight: 600;
+    font-family: "ink free";
+}
+.login-register{
+    font-size: 16px;
+    color: aliceblue;
+    text-align: center;
+    font-weight: 500;
+    margin: 25px 0 10px;
+    position: relative;
+    top: 2.5rem;
+    font-family: "ink free";
+}
+.login-register p a{
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+
+}
+.login-register p{
+    font-family: "ink free";
+    text-transform: capitalize;
+}
+.login-register p a:hover{
+    border-bottom: 2.5px solid #ffffff;
+}
